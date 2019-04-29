@@ -1,0 +1,237 @@
+    1  ls
+    2  pwd
+    3  cd -
+    4  pwd
+    5  ls
+    6  cd ..
+    7  ls
+    8  cd va
+    9  cd vagrant
+   10  ls
+   11  cd ..
+   12  ls
+   13  pwd
+   14  sudo apt-get install emacs
+   15  git config --global user.name "nildiert"
+   16  git config --global user.email "niljordan23@gmail.com"
+   17  ls
+   18  mkdir holberton && cd holberton
+   19  ls
+   20  mkdir nil_python
+   21  cd nil_python
+   22  ls
+   23  cd /usr/local/bin
+   24  ls
+   25  cd -
+   26  ls
+   27  python --version
+   28  echo $PATH
+   29  wich python
+   30  which python
+   31  cd /usr/bin
+   32  ls
+   33  cd -
+   34  python
+   35  ls
+   36  cd ni
+   37  ls
+   38  cd holberton
+   39  ls
+   40  cd nil_python
+   41  ls
+   42  python
+   43  history
+   44  \tman python
+   45  python
+   46  python --version
+   47  sudo apt-get install python 3.3.3
+   48  sudo apt-get install python3.6
+   49  python3
+   50  ls
+   51  cd holberton
+   52  ls
+   53  cd nil_python
+   54  ls
+   55  emacs
+   56  sudo apt-get install python3-pep8
+   57  python3
+   58  cd ..
+   59  ls
+   60  git clone https://github.com/nildiert/holbertonschool-higher_level_programming.git
+   61  ls
+   62  cd holbertonschool-higher_level_programming
+   63  ls
+   64  mkdir 0x00-python-hello_world
+   65  cd 0x00-python-hello_world
+   66  ls
+   67  pep8 --version
+   68  sudo apt-get install python3-pip
+   69  pip3 install pep8
+   70  sudo apt-get upgrade
+   71  sudo apt-get update
+   72  sudo apt-get upgrade
+   73  pep8 --upgrade
+   74  pep8 --version
+   75  cd /usr/local/lib/python3*/dist-packages/
+   76  ls
+   77  emacs /usr/lib/python3*/dist-packages/pep8.py
+   78  emacs /usr/local/lib/python3*/dist-packages/pep8.py
+   79  emacs /usr/lib/python3*/dist-packages/pep8.py
+   80  rm /usr/bin/pep8
+   81  cp /usr/lib/python3*/dist-packages/pep8.py /usr/bin/pep8
+   82  sudo cp /usr/lib/python3*/dist-packages/pep8.py /usr/bin/pep8
+   83  sudo chmod u+x /usr/bin/pep8
+   84  ls /usr/bin
+   85  pep8
+   86  sudo pep8
+   87  cd /usr/lib/python3*/dist-packages/
+   88  ls
+   89  cp pep8.py /usr/bin/pep8
+   90  sudo cp pep8.py /usr/bin/pep8
+   91  chmod u+x /usr/bin/pep8
+   92  sudo chmod u+x /usr/bin/pep8
+   93  pep8 --version
+   94  sudo chown -R $USER /usr/bin/pep8
+   95  pep8
+   96  pep8 --version
+   97  pip install --upgrade pep8
+   98  sudo apt-get install pip
+   99  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  100  python get-pip.py
+  101  python get-pip.py --no-index --find-links=/local/copies
+  102  pip
+  103  sudo apt-get install python-pip
+  104  pip
+  105  pip install --upgrade pep8
+  106  sudo pip install --upgrade pep8
+  107  pep8 --version
+  108  ls
+  109  cd holberton
+  110  ls
+  111  cd holbertonschool-higher_level_programming
+  112  ls
+  113  cd 0x00-python-hello_world
+  114  ls
+  115  ssh root@34.206.234.184 -p 43230
+  116  cd holberton
+  117  ls
+  118  cd holbertonschool-higher_level_programming
+  119  lss
+  120  ls
+  121  cp README.md 0x00-python-hello_world/README.md
+  122  cd 0x00-python-hello_world
+  123  ls
+  124  echo $PYCODE
+  125  export PYCODE='print("Holberton School: {}".format(88+10))'
+  126  echo $PYCODE
+  127  emacs main.py 
+  128  export PYFILE=main.py
+  129  emacs 0-run
+  130  python3 PYFILE
+  131  python3 $PYFILE
+  132  emacs 0-run
+  133  wc -l 0-run
+  134  ./0-run
+  135  chmod u+x 0-run
+  136  ./0-run
+  137  emacs 0-run
+  138  ./0-run
+  139  emacs 0-run
+  140  ./0-run
+  141  ls
+  142  rm *~
+  143  ls
+  144  export PYCODE='print("Holberton School: {}".format(88+10))'
+  145  python3 $PYCODE
+  146  history
+  147  echo $PYCODE
+  148  python3 echo $PYCODE
+  149  python3 -c $PYCODE
+  150  emacs 1-run_inline
+  151  chmod 1-run_inline
+  152  chmod u+x 1-run_inline
+  153  ./1-run_inline
+  154  emacs 1-run_inline
+  155  ./1-run_inline
+  156  emacs 1-run_inline
+  157  export PYCODE='print("Holberton School: {}".format(88+10))'
+  158  ./1-run_inline
+  159  emacs 1-run_inline
+  160  export PYCODE='print("Holberton School: {}".format(88+10))'
+  161  ./1-run_inline 
+  162  python3 -c $PYCODE
+  163  LS
+  164  ls
+  165  rm *~
+  166  git status
+  167  ls
+  168  git add 0-run 1-run_inline
+  169  git status
+  170  git commit -m 'Added the first two exercises'
+  171  git push origin master
+  172  emacs 3-print_number.py
+  173  python3 3-print_number.py
+  174  chmod u+x 3-print_number.py
+  175  ./3-print_number.py
+  176  git add 3-print_number.py
+  177  git commit -m 'Added a file that print a string followed a new line'
+  178  git push
+  179  ls
+  180  mv 3-print_number.py 2-print.py
+  181  ./2-print.py
+  182  emacs 3-print_number.py
+  183  chmod u+x 3-print_number.py
+  184  ./3-print_number.py
+  185  git add 3-print_number.py
+  186  git commit -m 'Added a file with a formatted string'
+  187  git push origin master
+  188  emacs 4-print_float.py
+  189  python
+  190  cd holberton
+  191  ls
+  192  cd holbertonschool-higher_level_programming
+  193  ls
+  194  cd 0x00-python-hello_world
+  195  ls
+  196  emacs 4-print_float.py
+  197  emacs 3-print_number.py
+  198  ls
+  199  cd holberton
+  200  ls
+  201  cd holbertonschool-higher_level_programming
+  202  ls
+  203  cd 0x00-python-hello_world
+  204  ls
+  205  python3
+  206  ls
+  207  emacs 4-print_float.py
+  208  chmod u+x 4-print_float.py
+  209  ./4-print_float.py
+  210  git add 4-print_float.py
+  211  git commit -m '[FEATURE] Added the file 4. Format numbers(float)'
+  212  git push origin master
+  213  emacs 5-print_string.py
+  214  python3
+  215  emacs 5-print_string.py
+  216  chmod u+x 5-print_string.py
+  217  ./5-print_string.py
+  218  git add 5-print_string.py
+  219  git commit -m '[FEATURE] Printed strings with format'
+  220  git push origin master
+  221  emacs 6-concat.py
+  222  python3
+  223  emacs 6-concat.py
+  224  chmod u+x 6-concat.py
+  225  ./6-concat.py
+  226  wc -l 6-concat.py
+  227  emacs 6-concat.py
+  228  wc -l 6-concat.py
+  229  ./6-concat.py
+  230  git add 6-concat.py
+  231  git commit -m '[FEATURE] Added a line to concats two strings'
+  232  git push origin master
+  233  emacs 7-edges.py
+  234  history
+  235  emacs 7-edges.py
+  236  pep8 --version
+  237  history
