@@ -5,4 +5,4 @@ def fizzbuzz():
             print("{:d} ".format(i), end='')
         else:
             print("{}".format("Fizz" if ((i % 3) == 0) else ""), end='')
-            print("{} ".format("Buzz" if ((i % 5) == 0) else ""), end='')
+            print("{}".format("Buzz" if ((i % 5) == 0) else ""), end=' ')
