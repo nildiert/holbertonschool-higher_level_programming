@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 import string
-print("{}".format(string.ascii_lowercase))
+print("{}".format(string.ascii_lowercase), end = '')
