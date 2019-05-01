@@ -31,12 +31,16 @@ listint_t *insert_node(listint_t **head, int number)
 		*head = new;
 		return (new);
 	}
-	while (copy->n < (number))
+	while (copy)
 	{
-		aux = copy;
-		if (copy->n < number && copy->next == NULL)
+		if (copy->n < number)
+		{
+			aux = copy;
+			copy = copy->next;
+
+		}
+		else
 			break;
-		copy = copy->next;
 	}
 	new->next = aux->next;
 	aux->next = new;
