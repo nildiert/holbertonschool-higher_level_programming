@@ -6,7 +6,6 @@
  * @number: integer to be included in new node
  * Return: address of the new element or NULL if it fails
  */
-
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *copy;
@@ -15,7 +14,7 @@ listint_t *insert_node(listint_t **head, int number)
 
 	if (!head)
 		return (0);
-	new = malloc(sizeof(*head));
+	new = malloc(sizeof(listint_t));
 	if (!new)
 		return (0);
 	new->n = number;
