@@ -10,13 +10,14 @@
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *copy;
-	listint_t *new = malloc(sizeof(*head));
+	listint_t *new;
 	listint_t *aux;
 
 	if (!head)
 		return (0);
+	new = malloc(sizeof(*head));
 	if (!new)
-		return (NULL);
+		return (0);
 	new->n = number;
 	if (!*head)
 	{
@@ -37,7 +38,6 @@ listint_t *insert_node(listint_t **head, int number)
 		{
 			aux = copy;
 			copy = copy->next;
-
 		}
 		else
 			break;
