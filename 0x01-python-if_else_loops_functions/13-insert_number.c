@@ -34,9 +34,8 @@ listint_t *insert_node(listint_t **head, int number)
 	while (copy->n < (number))
 	{
 		aux = copy;
-
 		if (copy->n < number && copy->next == NULL)
-			return (add_nodeint_end(&copy, number));
+			break;
 		copy = copy->next;
 	}
 	new->next = aux->next;
