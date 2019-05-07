@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
     max = 0
-    if my_list is None:
+    if my_list == []:
         return None
     else:
         my_list.sort(reverse=True)
