@@ -28,18 +28,10 @@ size_t listint_len(const listint_t *h)
 
 int is_palindrome(listint_t **head)
 {
-	int len, half, *array, i, j;
+	int len, array[1000000], i, j;
 
 	(void)head;
-	(void)half;
 	len = listint_len(*head);
-	if (len % 2 == 0)
-		half = (len / 2);
-	else
-		half = (len / 2) + 1;
-	array = malloc(sizeof(int) * len);
-	if (!array)
-		return (0);
 	for (i = 0; i <= len - 1; i++)
 	{
 		array[i] = (*head)->n;
@@ -49,7 +41,9 @@ int is_palindrome(listint_t **head)
 	for (j = 0, i; j < len; j++, i--)
 	{
 		if (array[j] != array[i])
+		{
 			return (0);
+		}
 	}
 	return (1);
 }
