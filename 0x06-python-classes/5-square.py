@@ -13,7 +13,6 @@ class Square:
         """
         self.__size = size
 
-
     def area(self):
         """ Example of init method
         Returns:
@@ -28,13 +27,14 @@ class Square:
             self.__size
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """Example of init method
         Args:
             size (int): Size of the square object
         """
-        if type(value) is not int :
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
