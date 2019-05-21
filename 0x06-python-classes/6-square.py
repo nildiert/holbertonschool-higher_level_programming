@@ -62,6 +62,6 @@ class Square:
         else:
             if self.__position[1] is not 0:
                 print("\n" * self.__position[1], end='')
-                for i in range(self.__size):
-                    print("{}".format(" " * self.__position[0]), end='')
-                    print("{}".format("#" * self.__size))
+            for i in range(self.__size):
+                print("{}".format(" " * self.__position[0]), end='')
+                print("{}".format("#" * self.__size))
