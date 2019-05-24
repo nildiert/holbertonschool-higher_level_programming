@@ -1,0 +1,64 @@
+===============================
+ How to Use doctest_in_help.py
+===============================
+
+This library is very simple, since it only has one function called
+``my_function()``.
+
+Numbers
+=======
+
+``my_function()`` returns the product of its arguments.  For numbers,
+that value is equivalent to using the ``*`` operator.
+
+::
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [[2, 56, 20], [7, 38, 5]]
+
+    >>> matrix_divided(matrix, 2)
+    [[1.0, 28.0, 10.0], [3.5, 19.0, 2.5]]
+
+
+It also works with floating-point values.
+
+::
+    >>> matrix = [[1.2, 2.4, 3.6],[4.6, 5.4, 6.8]]
+    >>> matrix_divided(matrix, 2)
+    [[0.6, 1.2, 1.8], [2.3, 2.7, 3.4]]
+
+    >>> matrix = [[0.6, 1.2, 1.8], [2.3, 2.7, 3.4]]
+    >>> matrix_divided(matrix, 5)
+    [[0.12, 0.24, 0.36], [0.46, 0.54, 0.68]]
+
+
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    >>> matrix3 = [[ [4, 5, 6], [4, 5, 6] ],    [ [4, 5, 6], [4, 5, 6] ]]
+    >>> matrix_divided(matrix3, 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+Non-Numbers
+===========
+
+Because ``*`` is also defined on data types other than numbers,
+``my_function()`` works just as well if one of the arguments is a
+string, a list, or a tuple.
+
+::
+  >>> matrix = [[1.2, 2.4, 3.6],[4.6, 5.4, 6.8]]
+    >>> matrix_divided(matrix, '3')
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix_divided(matrix, 'b')
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix_divided('a', 2)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
