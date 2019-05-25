@@ -9,3 +9,5 @@ def print_square(size):
 
     for i in range(size):
         print("#" * size)
+    if size is 0:
+        print("")

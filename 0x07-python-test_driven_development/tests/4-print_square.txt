@@ -31,7 +31,7 @@ that value is equivalent to using the ``*`` operator.
     ##########
     ##########
 
-
+    
 Errors
 ======
 
