@@ -39,8 +39,15 @@ It also works with floating-point values.
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
+    >>> say_my_name(1, "Jaramillo")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
     >>> say_my_name("", "Smith")
     My name is  Smith
+
+    >>> say_my_name("", "")
+    My name is  
 
 Non-Numbers
 ===========
