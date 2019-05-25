@@ -3,6 +3,8 @@ def matrix_divided(matrix, div):
     new_list = []
     size_error = "Each row of the matrix must have the same size"
     type_error = "matrix must be a matrix (list of lists) of integers/floats"
+    if matrix is None:
+        raise TypeError(type_error)
     if type(div) is not int:
         raise TypeError("div must be a number")
     if div is 0:
