@@ -21,6 +21,11 @@ that value is equivalent to using the ``*`` operator.
     >>> text_indentation("Nildiert Jimenez")
     Nildiert Jimenez
 
+    >>> text_indentation("Nildiert.Jimenez")
+    Nildiert.
+    <BLANKLINE>
+    Jimenez
+
 
     text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
     Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
