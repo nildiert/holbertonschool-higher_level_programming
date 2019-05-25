@@ -18,6 +18,9 @@ that value is equivalent to using the ``*`` operator.
     Traceback (most recent call last):
     TypeError: text must be a string
 
+    >>> text_indentation("Nildiert Jimenez")
+    Nildiert Jimenez
+
 
     text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
     Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
