@@ -33,6 +33,12 @@ Character |  Meaning
 
 *If the end of the file has been reached, f.read() will return an empty string ('')*
 
+>If you want to read all the lines of a file in a list you can also use:
+    list(f)
+or 
+    f.readlines().
+
+
 
     f.readline()
 >reads a single line from the file;
@@ -40,12 +46,6 @@ Character |  Meaning
 
     f.write(string)
 >writes the contents of string to the file, returning the number of characters written.
-
->If you want to read all the lines of a file in a list you can also use:
-    list(f)
-or 
-    f.readlines().
-
 
 
     f.tell()
@@ -62,18 +62,15 @@ When you’re done with a file, call:
 
 Method |  Meaning
 ------------ | -------------
-    writelines(sequence): |  It is a sequence of strings to the file usually a list of strings or any other iterable data type. It has no return value. 
-    tell(): |  It returns an integer that tells us the file object’s position from the beginning of the file in the form of bytes 
-    seek(offset, from_where): |  It is used to change the file object’s position. Offset indicates the number of bytes to be moved. from_where indicates from where the bytes are to be moved. 
-    flush(): |  Flush the internal buffer, like stdio‘s fflush(). It has no return value. close() automatically flushes the data but if you want to flush the data before closing the file then you can use this method. 
-    fileno(): | Returns the integer file descriptor that is used by the underlying implementation to request I/O operations from the operating system. 
-    fileno(): | Returns the integer file descriptor that is used by the underlying implementation to request I/O operations from the operating system. 
-    isatty(): | Returns True if the file is connected to a tty(-like) device and False if not. 
-    next(): | It is used when a file is used as an iterator. The method is called repeatedly. This method returns the next input line or raises StopIteration at EOF when the file is open for reading( behaviour is undefined when opened for writing). 
-
-
-    truncate([size]):  | Truncate the file’s size. If the optional size argument is present, the file is truncated to (at most) that size. The size defaults to the current position. The current file position is not changed. Note that if a specified size exceeds the file’s current size, the result is platform-dependent: possibilities include that the file may remain unchanged, increase to the specified size as if zero-filled, or increase to the specified size with undefined new content. 
-    close(): | Used to close an open file. A closed file cannot be read or written any more. 
+writelines(sequence): |  It is a sequence of strings to the file usually a list of strings or any other iterable data type. It has no return value. 
+tell(): |  It returns an integer that tells us the file object’s position from the beginning of the file in the form of bytes 
+seek(offset, from_where): |  It is used to change the file object’s position. Offset indicates the number of bytes to be moved. from_where indicates from where the bytes are to be moved. 
+flush(): |  Flush the internal buffer, like stdio‘s fflush(). It has no return value. close() automatically flushes the data but if you want to flush the data before closing the file then you can use this method. 
+fileno(): | Returns the integer file descriptor that is used by the underlying implementation to request I/O operations from the operating system. 
+isatty(): | Returns True if the file is connected to a tty(-like) device and False if not. 
+next(): | It is used when a file is used as an iterator. The method is called repeatedly. This method returns the next input line or raises StopIteration at EOF when the file is open for reading( behaviour is undefined when opened for writing). 
+truncate([size]):  | Truncate the file’s size. If the optional size argument is present, the file is truncated to (at most) that size. The size defaults to the current position. The current file position is not changed. Note that if a specified size exceeds the file’s current size, the result is platform-dependent: possibilities include that the file may remain unchanged, increase to the specified size as if zero-filled, or increase to the specified size with undefined new content. 
+close(): | Used to close an open file. A closed file cannot be read or written any more. 
 
 
 ### Atributes
