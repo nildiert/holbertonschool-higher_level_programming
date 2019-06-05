@@ -1,0 +1,43 @@
+=======================
+Test file 1-my_list.py
+=======================
+
+MyList inherits from list
+
+::
+
+Case 0 - Import
+
+=======
+
+    >>> MyList = __import__('1-my_list').MyList
+    >>>
+
+Case 1 - Main
+
+=======
+
+    >>> MyList = MyList()
+    >>> MyList.append(1)
+    >>> MyList.append(4)
+    >>> MyList.append(2)
+    >>> MyList.append(3)
+    >>> MyList.append(5)
+    >>> print(MyList)
+    [1, 4, 2, 3, 5]
+    >>> MyList.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(MyList)
+    [1, 4, 2, 3, 5]
+
+Case 1 - Errors
+
+=======
+
+    >>> My_List = MyList()
+    Traceback (most recent call last):
+    TypeError: 'MyList' object is not callable
+
+    >>> print(My_List)
+    Traceback (most recent call last):
+    NameError: name 'My_List' is not defined
