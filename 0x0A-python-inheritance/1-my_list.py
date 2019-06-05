@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 class MyList(list):
 
     def __getitem__(self, key):
