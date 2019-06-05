@@ -1,4 +1,4 @@
 def lookup(obj):
-    _list = []
-    _list = dir(obj)
-    return _list
+    list = []
+    list = dir(obj)
+    return list
