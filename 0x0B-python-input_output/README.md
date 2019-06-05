@@ -83,3 +83,17 @@ mode: | The I/O mode for the file. If the file was created using the open() buil
 name: | If the file object was created using open(), the name of the file.
 newlines: | A file object that has been opened in universal newline mode have this attribute which reflects the newline convention used in the file. The value for this attribute are “\r”, “\n”, “\r\n”, None or a tuple containing all the newline types seen.
 softspace: | It is a boolean that indicates whether a space character needs to be printed before another value when using the print statement. 
+
+
+### Predefined Clean-up Actions
+
+This code don't close the file:
+
+    for line in open("myfile.txt"):
+        print(line, end="")
+
+This code close the file after the execution:
+
+    with open("myfile.txt") as f:
+        for line in f:
+            print(line, end="")
