@@ -23,5 +23,6 @@ class Student:
             return str(self.__dict__)
         else:
             for key, value in json.items():
-                self.__dict__.update({key: value})
+                if key in self.__dict__:
+                    self.__dict__.update({key: value})
             print(json)
