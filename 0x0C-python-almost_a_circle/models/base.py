@@ -1,9 +1,10 @@
 #!/usr/bin/python
-""" Class Base """
 import json
+""" This is a comment of import """
 
 
 class Base:
+    """ Class Base """
 
     __nb_objects = 0
 
