@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """ This is a comment of import """
+import json
 
 
 class Base:
@@ -19,6 +19,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """ Method to convert json to string """
-        if list_dictionaries is None:
-            return "[]"
-        return json.dumps(list_dictionaries)
+        if list_dictionaries is not None:
+            if list_dictionaries is None:
+                return "[]"
+            return json.dumps(list_dictionaries)
