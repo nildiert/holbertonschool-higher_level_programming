@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from models.base import Base
 
+
 class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -62,5 +63,11 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        print("\n" * self.__y, end='')
         for i in range(self.__height):
+            print(" " * self.__x, end='')
             print("#" * self.__width)
+
+    def __str__(self):
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.__x, self.__y, self.__width, self.__height)
