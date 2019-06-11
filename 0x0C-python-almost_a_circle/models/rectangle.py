@@ -60,17 +60,17 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        return self.__width * self.__height
+        return self.width * self.height
 
     def display(self):
-        print("\n" * self.__y, end='')
-        for i in range(self.__height):
-            print(" " * self.__x, end='')
-            print("#" * self.__width)
+        print("\n" * self.y, end='')
+        for i in range(self.height):
+            print(" " * self.x, end='')
+            print("#" * self.width)
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
-            self.id, self.__x, self.__y, self.__width, self.__height)
+            self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         my_list = ["id", "width", "height", "x", "y"]
