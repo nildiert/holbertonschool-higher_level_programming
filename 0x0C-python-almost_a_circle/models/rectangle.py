@@ -74,5 +74,11 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         my_list = ["id", "width", "height", "x", "y"]
+        for count, value in enumerate(args):
+            setattr(self, my_list[count], value)
         for key, value in kwargs.items():
             setattr(self, key, value)
+
+    def to_dictionary(self):
+        return {"x":self.x, "y":self.y, "height":self.height,
+                "width":self.width, "id":self.id}
