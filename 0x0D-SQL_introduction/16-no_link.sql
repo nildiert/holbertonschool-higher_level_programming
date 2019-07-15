@@ -3,5 +3,5 @@
 SELECT score, name
        FROM second_table
        WHERE name != NULL
-       WHERE name != ''
+       OR name != ''
        ORDER BY score DESC;
