@@ -1,6 +1,6 @@
 -- Query  to do a list
 -- This query lists all the cities of California
-SELECT *
+SELECT cities.id, cities.name
        FROM cities
        WHERE state_id =
        (
