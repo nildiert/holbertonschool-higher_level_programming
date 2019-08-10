@@ -4,7 +4,7 @@
 import MySQLdb
 import sys
 
-if len(argv) is 4:
+if len(sys.argv) is 4:
     try:
         db = MySQLdb.connect(
             host='localhost',
