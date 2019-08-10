@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Script that lists all states that starging with N
+''' Script that lists all states that starging with N '''
 
 import MySQLdb
 import sys
