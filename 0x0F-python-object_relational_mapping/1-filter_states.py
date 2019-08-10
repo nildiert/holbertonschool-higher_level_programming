@@ -21,5 +21,5 @@ if len(sys.argv) is 4:
         ORDER BY states.id ASC;")
         for result in cursor:
             print("{}".format(result))
-    except Exception as err:
-        print("Exception: {}".format(err), file=sys.stderr)
+    except Exception:
+        pass
