@@ -15,6 +15,8 @@ if len(argv) is 4:
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC;")
+    cursor.execute("SELECT id, name\
+    FROM states WHERE name LIKE 'N%'\
+    ORDER BY states.id ASC;")
     for result in cursor:
         print("{}".format(result))

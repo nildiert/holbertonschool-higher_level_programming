@@ -14,6 +14,10 @@ if len(argv) is 5:
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT id, name FROM states WHERE name='{}';".format(argv[4]))
+    cursor.execute(
+        "SELECT id, name\
+        FROM states\
+        WHERE name='{}';".format(argv[4])
+    )
     for result in cursor:
         print("{}".format(result))
