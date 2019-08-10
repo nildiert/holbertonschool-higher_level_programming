@@ -20,7 +20,8 @@ if __name__ == '__main__':
         cursor.execute("SELECT id, name\
         FROM states WHERE name LIKE 'N%'\
         ORDER BY states.id ASC;")
-        for result in cursor:
+        rows = cursor.fetchall()
+        for result in rows:
             print("{}".format(result))
     except Exception:
         pass
