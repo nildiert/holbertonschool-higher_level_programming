@@ -14,13 +14,14 @@ if __name__ == '__main__':
         )
 
         cursor = db.cursor()
-        rows = cursor.fetchall()
+
         query = "SELECT id, name \
         FROM states WHERE name='%s' \
         ORDER BY states.id ASC;" % argv[4]
         cursor.execute(query)
+        rows = cursor.fetchall()
         for row in rows:
             print(row)
         cursor.close()
-    except Exception:
+    except Exception as err:
         pass
