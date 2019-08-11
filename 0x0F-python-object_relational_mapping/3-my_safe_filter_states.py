@@ -15,13 +15,13 @@ if __name__ == '__main__':
 
         cursor = db.cursor()
 
-        query = "SELECT id, name FROM states \
-        WHERE name LIKE '%s' \
-        ORDER BY states.id ASC;", (argv[4],)
-        cursor.execute(query)
+        cursor.execute("SELECT id, name FROM states \
+        WHERE name LIKE %s \
+        ORDER BY states.id ASC;", (argv[4],))
         rows = cursor.fetchall()
         for row in rows:
             print(row)
         cursor.close()
-    except Exception:
+    except Exception as err:
+        print(err)
         pass
