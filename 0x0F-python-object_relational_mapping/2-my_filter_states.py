@@ -21,5 +21,6 @@ if __name__ == '__main__':
         cursor.execute(query)
         for result in cursor:
             print(result)
+        cursor.close()
     except Exception:
         pass
