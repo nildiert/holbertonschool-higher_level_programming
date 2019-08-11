@@ -3,21 +3,23 @@
 import MySQLdb
 from sys import argv
 
-if len(argv) is 5:
-    db = MySQLdb.connect(
-        host='localhost',
-        user=argv[1],
-        passwd=argv[2],
-        db=argv[3],
-        port=3306
-    )
+if __name__ == '__main__':
 
-    cursor = db.cursor()
+    try:
+        db = MySQLdb.connect(
+            host='localhost',
+            user=argv[1],
+            passwd=argv[2],
+            db=argv[3],
+            port=3306
+        )
 
-    cursor.execute(
-        "SELECT id, name\
-        FROM states\
+        cursor = db.cursor()
+        query = "SELECT id, name \
+        FROM states \
         WHERE name='{}';".format(argv[4])
-    )
-    for result in cursor:
-        print("{}".format(result))
+        cursor.execute(query)
+        for result in cursor:
+            print(result)
+    except Exception:
+        pass
