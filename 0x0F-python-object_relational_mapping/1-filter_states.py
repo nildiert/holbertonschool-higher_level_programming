@@ -17,11 +17,12 @@ if __name__ == '__main__':
 
         cursor = db.cursor()
 
-        cursor.execute("SELECT *\
-        FROM states WHERE name LIKE 'N%'\
-        ORDER BY states.id ASC;")
+        cursor.execute("SELECT * \
+        FROM states WHERE name LIKE 'N%' \
+        ORDER BY states.id;")
         rows = cursor.fetchall()
         for result in rows:
             print("{}".format(result))
+        cursor.close()
     except Exception:
         pass
