@@ -17,11 +17,11 @@ if __name__ == '__main__':
 
         query = "SELECT id, name FROM states \
         WHERE name LIKE '%s' \
-        ORDER BY states.id ASC;" % argv[4]
+        ORDER BY states.id ASC;", (argv[4],)
         cursor.execute(query)
         rows = cursor.fetchall()
         for row in rows:
             print(row)
         cursor.close()
-    except Exception as err:
+    except Exception:
         pass
