@@ -15,8 +15,8 @@ if __name__ == '__main__':
 
         cursor = db.cursor()
 
-        query = "SELECT id, name \
-        FROM states WHERE name LIKE '%s' \
+        query = "SELECT id, name FROM states \
+        WHERE name LIKE '%s' \
         ORDER BY states.id ASC;" % argv[4]
         cursor.execute(query)
         rows = cursor.fetchall()
@@ -24,5 +24,4 @@ if __name__ == '__main__':
             print(row)
         cursor.close()
     except Exception as err:
-        print(err)
         pass
