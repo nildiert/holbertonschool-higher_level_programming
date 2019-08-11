@@ -18,7 +18,7 @@ if __name__ == '__main__':
         query = "SELECT id, name \
         FROM states WHERE name='%s' \
         ORDER BY states.id ASC;" % argv[4]
-        cursor.execute()
+        cursor.execute(query)
         for row in rows:
             print(row)
         cursor.close()
