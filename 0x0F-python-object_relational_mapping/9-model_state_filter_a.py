@@ -21,6 +21,6 @@ if __name__ == "__main__":
     Session.bind = engine
     current_session = Session()
     data = current_session.query(State).filter(
-        State.name.like('%')).order_by(State.id)
+        State.name.like('%a%')).order_by(State.id)
     for item in data:
         print("{}: {}".format(item.id, item.name))
