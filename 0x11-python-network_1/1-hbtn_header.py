@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 # Send a request to the URL
 
-from sys import argv
-from urllib.request import Request, urlopen
+import sys
+import urllib.request
 
 try:
-    response = urlopen(argv[1])
-    print(response.info()['X-Request-Id'])
-except:
+    with urllib.request.urlopen(sys.argv[1]) as header:
+        print(header.info()['X-Request-Id'])
+except Exception as err:
     pass
