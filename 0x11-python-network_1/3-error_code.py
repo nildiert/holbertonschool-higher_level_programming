@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """ This script takes a URL and displays the body of the response """
 import sys
-from urllib.request import Request, urlopen
+import urllib.request
 from urllib.error import HTTPError
 
 if __name__ == "__main__":
     try:
-        req = Request(sys.argv[1])
-        response = urlopen(req)
-        print("{}".format(response.read().decode('utf-8')))
+        with urllib.request.urlopen(sys.argv[1]) as response:
+            html = response.read()
+            print("{}".format(html.decode('utf-8')))
     except HTTPError as e:
-        print("Error code: {}".format(e.code)
+        print("Error code: {}".format(e.code))
     except:
         pass
