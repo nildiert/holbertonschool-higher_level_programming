@@ -2,7 +2,7 @@
 """ This script takes a URL and displays the body of the response """
 import sys
 from urllib.request import Request, urlopen
-from urllib.error import URLError, HTTPError
+from urllib.error import HTTPError
 
 if __name__ == "__main__":
     try:
@@ -11,3 +11,5 @@ if __name__ == "__main__":
         print("{}".format(response.read().decode('utf-8')))
     except HTTPError as e:
         print("Error code: {}".format(e.code)
+    except:
+        pass
