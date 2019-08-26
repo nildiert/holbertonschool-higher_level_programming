@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Script that fetches with a website
+''' Script that fetches with a website '''
 
 import urllib.request
 
