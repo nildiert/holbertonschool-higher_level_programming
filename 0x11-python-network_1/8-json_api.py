@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+""" post request in api """
+
 if __name__ == "__main__":
     try:
         import requests
