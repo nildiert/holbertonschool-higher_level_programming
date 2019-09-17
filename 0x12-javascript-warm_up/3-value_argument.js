@@ -3,7 +3,9 @@
   js
 */
 if (process.argv.length >= 3) {
-  console.log(process.argv[2]);
+  for (const i of process.argv.slice(2)) {
+    console.log(i)
+  }
 } else {
-  console.log('No argument');
+  console.log('No argument')
 }
