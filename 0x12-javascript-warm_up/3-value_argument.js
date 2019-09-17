@@ -2,8 +2,9 @@
 /*
   js
 */
-if (process.argv.length >= 2) {
-  console.log(process.argv[2]);
+const value = process.argv[2];
+if (value) {
+  console.log(value);
 } else {
   console.log('No argument');
 }
