@@ -7,7 +7,7 @@ function sortNumber (a, b) {
   return b - a;
 }
 
-if (process.argv.length === 2) {
+if (process.argv.length < 4) {
   console.log(0);
 } else {
   const myArray = [];
