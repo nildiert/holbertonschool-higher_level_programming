@@ -4,14 +4,14 @@
 */
 
 if (process.argv.length >= 3) {
-  const size = process.argv[2]
+  const size = process.argv[2];
   if (!isNaN(size)) {
     for (let i = 0; i < parseInt(size); i++) {
-      console.log('X'.repeat(size))
+      console.log('X'.repeat(size));
     }
   } else {
-    console.log('Missing size')
+    console.log('Missing size');
   }
 } else {
-  console.log('Missing size')
+  console.log('Missing size');
 }
