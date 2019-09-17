@@ -181,13 +181,13 @@ While naming your variables in JavaScript, keep the following rules in mind.
 
 ## JavaScript - if...else Statement
 ### if statement
-```
+```javascript
 if (expression) {
    Statement(s) to be executed if expression is true
 }
 ```
 ### if...else statement
-```
+```javascript
 if (expression) {
    Statement(s) to be executed if expression is true
 } else {
@@ -195,7 +195,7 @@ if (expression) {
 }
 ```
 ### if...else if... statement
-```
+```javascript
 if (expression 1) {
    Statement(s) to be executed if expression 1 is true
 } else if (expression 2) {
@@ -207,7 +207,7 @@ if (expression 1) {
 }
 ```
 ## JavaScript - Switch Case
-```
+```javascript
 switch (expression) {
    case condition 1: statement(s)
    break;
@@ -231,7 +231,7 @@ while (expression) {
 }
 ```
 ### The do...while Loop
-```
+```javascript
 do {
    Statement(s) to be executed;
 } while (expression)
@@ -253,7 +253,7 @@ for (variablename in object) {
 
 ### Function Definition
 }
-```
+```javascript
 <script type = "text/javascript">
    <!--
       function functionname(parameter-list) {
@@ -264,8 +264,6 @@ for (variablename in object) {
 }
 ```
 
-1. Write markdown text in this textarea.
-2. Click 'HTML Preview' button.
 
 ----
 ## Authors
