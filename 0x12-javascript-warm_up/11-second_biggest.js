@@ -3,6 +3,10 @@
   js
 */
 
+function sortNumber(a, b) {
+    return b - a
+}
+
 if (process.argv.length === 2) {
     console.log(0)
 } else {
@@ -12,6 +16,6 @@ if (process.argv.length === 2) {
 	my_array.push(Number(i))
     }
 
-    my_array.sort()
-    console.log(my_array)
+    my_array.sort(sortNumber)
+    console.log(my_array[1])
 }
