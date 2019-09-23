@@ -2,11 +2,14 @@
 const SquareBase = require('./5-square');
 class Square extends SquareBase {
   constructor (size) {
-    super(size);
+    super(size, size);
     this.size = size;
   }
 
-  charPrint (c = 'X') {
+  charPrint (c) {
+    if (typeof c === 'undefined') {
+      c = 'X';
+    }
     for (let i = 0; i < this.size; i++) {
       console.log(c.repeat(this.size));
     }
