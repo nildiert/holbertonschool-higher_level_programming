@@ -10,5 +10,4 @@ for (const i in dict) {
     newDict[dict[i]].push(i);
   }
 }
-console.log(dict);
 console.log(newDict);
