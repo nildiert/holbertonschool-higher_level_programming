@@ -245,7 +245,7 @@ Write a function that checks for lowercase character.
 
 You don’t need to understand ```import```
 
-```
+```python
 guillaume@ubuntu:~/0x01$ cat 7-main.py
 #!/usr/bin/env python3
 islower = __import__('7-islower').islower
@@ -266,18 +266,19 @@ guillaume@ubuntu:~/0x01$
 
 ```
 
-8. To uppercase mandatory
-   Write a function that prints a string in uppercase followed by a new line.
+**8. To uppercase mandatory**
 
-Prototype: def uppercase(str):
-You can only use no more than 2 print functions with string format
-You can only use one loop in your code
-You are not allowed to import any module
-You are not allowed to use str.upper() and str.isupper()
-Tips: ord()
-You don’t need to understand **import**
+Write a function that prints a string in uppercase followed by a new line.
 
-```
+* Prototype: ```def uppercase(str):```
+* You can only use no more than 2 ```print``` functions with string format
+* You can only use one loop in your code
+* You are not allowed to import any module
+* You are not allowed to use ```str.upper()``` and ```str.isupper()```
+* Tips: ```ord()```
+You don’t need to understand ```import```
+
+```python
 guillaume@ubuntu:~/0x01$ cat 8-main.py
 #!/usr/bin/env python3
 uppercase = __import__('8-uppercase').uppercase
@@ -291,15 +292,16 @@ HOLBERTON SCHOOL 98 BATTERY STREET
 guillaume@ubuntu:~/0x01$
 ```
 
-9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important mandatory
-   Write a function that prints the last digit of a number.
+**9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important**
 
-Prototype: def print_last_digit(number):
-Returns the value of the last digit
-You are not allowed to import any module
-You don’t need to understand **import**
+Write a function that prints the last digit of a number.
 
-```
+* Prototype: ```def print_last_digit(number):```
+* Returns the value of the last digit
+* You are not allowed to import any module
+You don’t need to understand ```__import__```
+
+```python
 guillaume@ubuntu:~/0x01$ cat 9-main.py
 #!/usr/bin/env python3
 print_last_digit = __import__('9-print_last_digit').print_last_digit
@@ -314,15 +316,16 @@ guillaume@ubuntu:~/0x01$ ./9-main.py
 guillaume@ubuntu:~/0x01$
 ```
 
-10. a + b mandatory
-    Write a function that adds two integers and returns the result.
+**10. a + b mandatory**
 
-Prototype: def add(a, b):
-Returns the value of a + b
-You are not allowed to import any module
-You don’t need to understand **import**
+Write a function that adds two integers and returns the result.
 
-```
+* Prototype: ```def add(a, b)```:
+* Returns the value of ```a + b```
+* You are not allowed to import any module
+You don’t need to understand ```__import__```
+
+```python
 guillaume@ubuntu:~/0x01$ cat 10-main.py
 #!/usr/bin/env python3
 add = __import__('10-add').add
@@ -338,15 +341,16 @@ guillaume@ubuntu:~/0x01$ ./10-main.py
 guillaume@ubuntu:~/0x01$
 ```
 
-11. a ^ b mandatory
-    Write a function that computes a to the power of b and return the value.
+**11. a ^ b**
 
-Prototype: def pow(a, b):
-Returns the value of a ^ b
-You are not allowed to import any module
-You don’t need to understand **import**
+Write a function that computes ```a``` to the power of ```b``` and return the value.
 
-```
+* Prototype: ```def pow(a, b)```:
+* Returns the value of ```a ^ b```
+* You are not allowed to import any module
+You don’t need to understand ```__import__```
+
+```python
 guillaume@ubuntu:~/0x01$ cat 11-main.py
 #!/usr/bin/env python3
 pow = __import__('11-pow').pow
@@ -366,17 +370,18 @@ guillaume@ubuntu:~/0x01$ ./11-main.py
 guillaume@ubuntu:~/0x01$
 ```
 
-12. Fizz Buzz mandatory
-    Write a function that prints the numbers from 1 to 100 separated by a space.
+**12. Fizz Buzz mandatory**
 
-For multiples of three print Fizz instead of the number and for multiples of five print Buzz.
-For numbers which are multiples of both three and five print FizzBuzz.
-Prototype: def fizzbuzz():
+Write a function that prints the numbers from 1 to 100 separated by a space.
+
+For multiples of three print ```Fizz``` instead of the number and for multiples of five print ```Buzz```.
+For numbers which are multiples of both three and five print ```FizzBuzz```.
+Prototype: ```def fizzbuzz():```
 Each element should be followed by a space
 You are not allowed to import any module
-You don’t need to understand **import**
+You don’t need to understand ```__import__```
 
-```
+```python
 guillaume@ubuntu:~/0x01$ cat 12-main.py
 #!/usr/bin/env python3
 fizzbuzz = __import__('12-fizzbuzz').fizzbuzz
@@ -389,17 +394,19 @@ guillaume@ubuntu:~/0x01$ ./12-main.py | cat -e
 guillaume@ubuntu:~/0x01$
 ```
 
-13. Insert in sorted linked list mandatory
-    Technical interview preparation:
+**13. Insert in sorted linked list mandatory**
 
-You are not allowed to google anything
-Whiteboard first
+*Technical interview preparation:*
+
+* You are not allowed to google anything
+* Whiteboard first
+
 Write a function in C that inserts a number into a sorted singly linked list.
 
-Prototype: listint_t \*insert_node(listint_t \*\*head, int number);
-Return: the address of the new node, or NULL if it failed
+* Prototype: ```listint_t \*insert_node(listint_t \*\*head, int number);```
+* Return: the address of the new node, or ```NULL``` if it failed
 
-```
+```C
 carrie@ubuntu:0x01$ cat lists.h
 #ifndef LISTS_H
 #define LISTS_H
@@ -427,7 +434,7 @@ listint_t *insert_node(listint_t **head, int number);
 #endif /* LISTS_H */
 ```
 
-```
+```C
 carrie@ubuntu:0x01$ cat linked_lists.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -544,7 +551,7 @@ int main(void)
 }
 ```
 
-```
+```C
 carrie@ubuntu:0x01$ gcc -Wall -Werror -Wextra -pedantic 13-main.c linked_lists.c 13-insert_number.c -o insert
 carrie@ubuntu:0x01$ ./insert
 0
@@ -567,4 +574,3 @@ carrie@ubuntu:0x01$ ./insert
 1024
 carrie@ubuntu:0x01$
 ```
-
