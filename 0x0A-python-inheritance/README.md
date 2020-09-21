@@ -55,11 +55,11 @@ At the end of this project, you are expected to be able to explain to anyone, **
 **0. Lookup**
    Write a function that returns the list of available attributes and methods of an object:
 
-Prototype: def lookup(obj):
-Returns a list object
-You are not allowed to import any module
+* Prototype: ```def lookup(obj):```
+* Returns a ```list``` object
+* You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 0-main.py
 #!/usr/bin/python3
 lookup = __import__('0-lookup').lookup
@@ -84,13 +84,13 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **1. My list**
-   Write a class MyList that inherits from list:
+   Write a class ```MyList``` that inherits from ```list```:
 
-Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
-You can assume that all the elements of the list will be of type int
-You are not allowed to import any module
+* Public instance method: ```def print_sorted(self):``` that prints the list, but sorted (ascending sort)
+* You can assume that all the elements of the list will be of type ```int```
+* You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 1-main.py
 #!/usr/bin/python3
 MyList = __import__('1-my_list').MyList
@@ -114,12 +114,12 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **2. Exact same object**
-   Write a function that returns True if the object is exactly an instance of the specified class ; otherwise False.
+   Write a function that returns ```True``` if the object is exactly an instance of the specified class ; otherwise ```False```.
 
-Prototype: def is_same_class(obj, a_class):
-You are not allowed to import any module
+* Prototype: ```def is_same_class(obj, a_class)```:
+* You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 2-main.py
 #!/usr/bin/python3
 is_same_class = __import__('2-is_same_class').is_same_class
@@ -138,12 +138,12 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **3. Same class or inherit from**
-   Write a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False.
+Write a function that returns ```True``` if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise ```False```.
 
-Prototype: def is_kind_of_class(obj, a_class):
+Prototype: ```def is_kind_of_class(obj, a_class)```:
 You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 3-main.py
 #!/usr/bin/python3
 is_kind_of_class = __import__('3-is_kind_of_class').is_kind_of_class
@@ -163,12 +163,12 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **4. Only sub class of**
-   Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.
+   Write a function that returns ```True``` if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise ```False```.
 
-Prototype: def inherits_from(obj, a_class):
-You are not allowed to import any module
+* Prototype: ```def inherits_from(obj, a_class)```:
+* You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 4-main.py
 #!/usr/bin/python3
 inherits_from = __import__('4-inherits_from').inherits_from
@@ -188,11 +188,11 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **5. Geometry module**
-   Write an empty class BaseGeometry.
+   Write an empty class ```BaseGeometry```.
 
-You are not allowed to import any module
+* You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 5-main.py
 #!/usr/bin/python3
 BaseGeometry = __import__('5-base_geometry').BaseGeometry
@@ -211,12 +211,12 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **6. Improve Geometry**
-   Write a class BaseGeometry (based on 5-base_geometry.py).
+   Write a class ```BaseGeometry``` (based on ```5-base_geometry.py```).
 
-Public instance method: def area(self): that raises an Exception with the message area() is not implemented
-You are not allowed to import any module
+* Public instance method: ```def area(self)```: that raises an ```Exception``` with the message ```area() is not implemented```
+* You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 6-main.py
 #!/usr/bin/python3
 BaseGeometry = __import__('6-base_geometry').BaseGeometry
@@ -234,16 +234,16 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **7. Integer validator**
-   Write a class BaseGeometry (based on 6-base_geometry.py).
+   Write a class ```BaseGeometry``` (based on ```6-base_geometry.py```).
 
-Public instance method: def area(self): that raises an Exception with the message area() is not implemented
-Public instance method: def integer_validator(self, name, value): that validates value:
-you can assume name is always a string
-if value is not an integer: raise a TypeError exception, with the message <name> must be an integer
-if value is less or equal to 0: raise a ValueError exception with the message <name> must be greater than 0
-You are not allowed to import any module
+* Public instance method: ```def area(self):``` that raises an ```Exception``` with the message ```area() is not implemented```
+* Public instance method: def ```integer_validator(self, name, value):``` that validates ```value```:
+    * you can assume ```name``` is always a string
+    * if ```value``` is not an integer: raise a ```TypeError``` exception, with the message ```<name> must be an integer```
+    * if ```value``` is less or equal to 0: raise a ```ValueError``` exception with the message ```<name> must be greater than 0```
+* You are not allowed to import any module
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 7-main.py
 #!/usr/bin/python3
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
@@ -276,13 +276,13 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **8. Rectangle**
-   Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
+   Write a class ```Rectangle``` that inherits from ```BaseGeometry``` (```7-base_geometry.py```).
 
-Instantiation with width and height: def **init**(self, width, height):
-width and height must be private. No getter or setter
-width and height must be positive integers, validated by integer_validator
+* Instantiation with ```width``` and ```height```: ```def **init**(self, width, height):```
+    * ```width``` and ```height``` must be private. No getter or setter
+    * ```width``` and ```height``` must be positive integers, validated by ```integer_validator```
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 8-main.py
 #!/usr/bin/python3
 Rectangle = __import__('8-rectangle').Rectangle
@@ -311,15 +311,15 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **9. Full rectangle**
-   Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task based on 8-rectangle.py)
+   Write a class ```Rectangle``` that inherits from ```BaseGeometry``` (```7-base_geometry.py```). (task based on ```8-rectangle.py```)
 
-Instantiation with width and height: def **init**(self, width, height)::
-width and height must be private. No getter or setter
-width and height must be positive integers validated by integer_validator
-the area() method must be implemented
-print() should print, and str() should return, the following rectangle description: [Rectangle] <width>/<height>
+* Instantiation with width and height: def **init**(self, width, height)::
+    * ```width``` and ```height``` must be private. No getter or setter
+    * ```width``` and ```height``` must be positive integers validated by ```integer_validator```
+* the ```area()``` method must be implemented
+* ```print()``` should print, and ```str()``` should return, the following rectangle description: ```[Rectangle] <width>/<height>```
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 9-main.py
 #!/usr/bin/python3
 Rectangle = __import__('9-rectangle').Rectangle
@@ -336,14 +336,14 @@ guillaume@ubuntu:~/0x0A$
 ```
 
 **10. Square #1**
-    Write a class Square that inherits from Rectangle (9-rectangle.py):
+    Write a class ```Square``` that inherits from ```Rectangle``` (```9-rectangle.py```):
 
-Instantiation with size: def **init**(self, size)::
-size must be private. No getter or setter
-size must be a positive integer, validated by integer_validator
-the area() method must be implemented
+* Instantiation with ```size```: ```def **init**(self, size):```:
+    * ```size``` must be private. No getter or setter
+    * ```size``` must be a positive integer, validated by ```integer_validator```
+* the ```area()``` method must be implemented
 
-```
+```python
 guillaume@ubuntu:~/0x0A$ cat 10-main.py
 #!/usr/bin/python3
 Square = __import__('10-square').Square
