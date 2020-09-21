@@ -347,7 +347,7 @@ guillaume@ubuntu:~/0x0A$
 
 **10. Square #1**
 
-    Write a class ```Square``` that inherits from ```Rectangle``` (```9-rectangle.py```):
+Write a class ```Square``` that inherits from ```Rectangle``` (```9-rectangle.py```):
 
 * Instantiation with ```size```: ```def **init**(self, size):```:
     * ```size``` must be private. No getter or setter
@@ -370,27 +370,27 @@ guillaume@ubuntu:~/0x0A$ ./10-main.py
 guillaume@ubuntu:~/0x0A$
 ```
 
-11. Square #2 mandatory
-    Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
+**11. Square #2**
 
-Instantiation with size: def **init**(self, size)::
-size must be private. No getter or setter
-size must be a positive integer, validated by integer_validator
-the area() method must be implemented
-print() should print, and str() should return, the square description: [Square] <width>/<height>
+Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
 
-```
-guillaume@ubuntu:~/0x0A$ cat 11-main.py
+* Instantiation with ```size```: ```def **init**(self, size):```:
+    * ```size``` must be private. No getter or setter
+    * ```size``` must be a positive integer, validated by ```integer_validator```
+* the ```area()``` method must be implemented
+
+```python
+guillaume@ubuntu:~/0x0A$ cat 10-main.py
 #!/usr/bin/python3
-Square = __import__('11-square').Square
+Square = __import__('10-square').Square
 
 s = Square(13)
 
 print(s)
 print(s.area())
 
-guillaume@ubuntu:~/0x0A$ ./11-main.py
-[Square] 13/13
+guillaume@ubuntu:~/0x0A$ ./10-main.py
+[Rectangle] 13/13
 169
-guillaume@ubuntu:~/0x0A$
+guillaume@ubuntu:~/0x0A$ 
 ```
