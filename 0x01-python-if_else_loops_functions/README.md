@@ -512,7 +512,7 @@ void free_listint(listint_t *head)
 }
 ```
 
-```
+```C
 carrie@ubuntu:0x01$ cat 13-main.c
 #include <stdlib.h>
 #include <string.h>
