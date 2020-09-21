@@ -33,8 +33,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ## Tasks
 
-0. Squared simple mandatory
-   Write a function that computes the square value of all integers of a matrix.
+**0. Squared simple**
+
+Write a function that computes the square value of all integers of a matrix.
 
 Prototype: def square_matrix_simple(matrix=[]):
 matrix is a 2 dimensional array
