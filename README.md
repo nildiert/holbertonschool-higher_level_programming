@@ -26,6 +26,9 @@
 * [0x0F. Python - Object-relational mapping](https://github.com/nildiert/holbertonschool-higher_level_programming/tree/master/0x0F-python-object_relational_mapping)
 
 
+---
+
+## AirBnB Project
 
 * 0x00. AirBnB clone - The console
 * 0x01. AirBnB clone - Web static
